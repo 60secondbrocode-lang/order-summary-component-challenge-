@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Red Hat Display";
+  font-weight: 900;
+
+}
+
+
+
+
+.container {
+  width: 100%;
+  max-width: 780px;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+   background-image: url(images/pattern-background-desktop.svg);
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: top center;
+}
+
+
+
+/* THIS IS MAIN CARD CONTAINER  */
+
+.main-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+ 
+
+}
+
+.hero-image {
+  display: inline-block;
+  width: 100%;
+}
+
+
+/* THIS IS WHERE CARD INFO GOES*/
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 40px ;
+ 
+}
+
+h2 {
+  text-align: center;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+p {
+  text-align: center;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height:1.5;
+}
+
+
+/* THIS IS PRICE TAG AND IT'S INFO */
+
+
+.price-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 30px 25px;
+  border-radius: 20px;
+}
+
+.icon-tag {
+  display: flex;
+  gap: 15px;
+}
+
+.price-tag .annual-plan{
+    margin-bottom: 5px;
+    color: hsl(223, 47%, 23%);
+}
+
+.price-tag .price{
+      color:   hsl(224, 23%, 55%);
+      font-weight: 700;
+}
+
+
+.change:hover{
+   color: hsl(223, 47%, 23%);
+}
+
+
+
+/* THIS IS CARD BUTTONS STYLING*/
+
+
+.payment-btn{
+    text-decoration: none;
+    background-color:  hsl(245, 75%, 52%);
+    color:  hsl(220, 23%, 97%);
+    padding: 15px 90px;
+    border-radius: 15px;
+    margin: 0 auto 15px 0;
+    box-shadow: 0 15px 10px hsla(246, 12%, 54%, 0.308);
+}
+
+.payment-btn:hover{
+    background-color: hsl(223, 47%, 23%);
+    color: hsl(0, 0%, 100%)
+}
+
+.payment-btn:active{
+    background-color:hsl(245, 75%, 52%) ;
+}
+
+
+.cancel-btn{
+    margin:0 auto;
+    text-decoration: none;
+    color:  hsl(224, 23%, 55%);
+}
+
+.cancel-btn:hover{
+    color: hsl(245, 75%, 52%);
+}
